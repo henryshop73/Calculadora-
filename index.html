@@ -5,15 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Calculadora</h1>
-    <input type="text" id="num1">
-    <input type="text" id="num2">
-    <button onclick="calcular('suma')">+</button>
-    <button onclick="calcular('resta')">-</button>
-    <button onclick="calcular('multiplicacion')">*</button>
-    <button onclick="calcular('dividir')">/</button>
+    <table  class="calculator">
+        <tr>
+            <td colspan="4"><label for="">0</label></td>
+        </tr>   
+        <tr>
+            <td><button class="dark-gray">AC</button></td>
+            <td><button class="dark-gray">+/-</button></td>
+            <td><button class="dark-gray">%</button></td>
+            <td><button class="orange">/</button></td>
+        </tr>
+        <tr>
+            <td><button class="light-gray">7</button></td>
+            <td><button class="light-gray">8</button></td>
+            <td><button class="light-gray">9</button></td>
+            <td><button class="orange">*</button></td>
+        </tr>
+        <tr>
+            <td><button class="light-gray">4</button></td>
+            <td><button class="light-gray">5</button></td>
+            <td><button class="light-gray">6</button></td>
+            <td><button class="orange">-</button></td>
+        </tr>
+        <tr>
+            <td><button class="light-gray">1</button></td>
+            <td><button class="light-gray">2</button></td>
+            <td><button class="light-gray">3</button></td>
+            <td><button class="orange">+</button></td>
+        </tr>
+        
+        <tr>
+            <td colspan="2"><button class="button-zero light-gray border-radius-left">0</button></td>
+            <td><button class="light-gray">,</button></td>
+            <td><button class="orange border-radius-right">=</button></td>
+        </tr>
+        
+    </table>
+   
 
     <script src="script.js"></script>
 
