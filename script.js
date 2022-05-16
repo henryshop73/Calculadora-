@@ -21,5 +21,5 @@ function calcular(operacion) {
         default:
             break;
     }
-    alert("El resultado es:" + resultado)
+    alert("El resultado es: " + resultado)
 }
