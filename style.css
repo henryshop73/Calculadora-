@@ -13,7 +13,7 @@
     background-color: rgb(54, 52, 52);
     /*border: 1px solid gray;*/
     border-collapse: collapse;
-    border-radius: 10px;
+    border-radius: 10px;   
 }
 .orange {
     background-color: orange;
@@ -29,4 +29,9 @@
 }
 .border-radius-right {
     border-radius: 0 0 9px 0;
+}
+.alinear {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 14px;
 }
