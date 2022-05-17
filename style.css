@@ -1,10 +1,11 @@
 * {
     color: white;
 }
-.calculator button {
+.calculator .button {
     width: 35px;
-    height: 100%;
-    border: 0;
+    height: 45px;
+    border: 0.5px solid black;
+    padding: 0;
 }
 .calculator .button-zero {
     width: 100%;
@@ -13,25 +14,61 @@
     background-color: rgb(54, 52, 52);
     /*border: 1px solid gray;*/
     border-collapse: collapse;
-    border-radius: 10px;   
+    border-radius: 10px;
+    box-shadow: 3px 4px 12px 2px black;   
 }
+
 .orange {
     background-color: orange;
 }
+
+.orange:active {
+    background-color: rgb(177, 117, 6);
+}
+
 .dark-gray {
-    background-color: rgb(94, 91, 91);
+    background-color: rgb(161, 157, 157);
 }
+
+.dark-gray:active {
+    background-color: rgb(204, 200, 200);
+}
+
 .light-gray {
-    background-color: rgb(207, 203, 203);
+    background-color: rgb(182, 179, 179);
 }
+
+.light-gray:active {
+    background-color: rgb(223, 222, 222);
+}
+
 .border-radius-left {
     border-radius: 0 0 0 9px;
 }
+
 .border-radius-right {
     border-radius: 0 0 9px 0;
 }
+
 .alinear {
     display: flex;
     justify-content: flex-end;
-    padding-right: 14px;
+    padding: 10px 14px 0 0;
+    height: 30px;
 }
+
+.padding-zero {
+    padding: 0;
+}
+
+.boton-redondo {
+    background-color: red;
+    border-radius: 50px;
+    height: 20px; 
+    width: 20px;
+    border: none;
+}
+.actions-buttons {
+    padding: 5px 0 0 5px;
+}
+
