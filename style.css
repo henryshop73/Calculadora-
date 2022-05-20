@@ -67,8 +67,22 @@
     height: 20px; 
     width: 20px;
     border: none;
+    color: red;
 }
 .actions-buttons {
     padding: 5px 0 0 5px;
 }
 
+.boton-redondo2 {
+    background-color: yellow;
+    color: yellow;
+}
+
+.boton-redondo3 {
+    background-color: rgb(7, 209, 7);
+    color: rgb(7, 209, 7);
+}
+
+.text-color-black {
+    color: black;
+}

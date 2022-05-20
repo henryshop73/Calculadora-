@@ -9,10 +9,12 @@
 </head>
 <body>
     <table  class="calculator">
-        <tr >
-            <td class= "actions-buttons"><button class= "boton-redondo" ></button></td>
-            <td class= "actions-buttons"><button class="boton-redondo"></button></td>
-            <td class= "actions-buttons"><button class="boton-redondo"></button></td>
+        <tr class= "alinear-botones-redondos">
+            <td colspan="3" class= "actions-buttons" onmouseover="actionButtons()" onmouseout="disableActionButtons()">
+                <button id="buttonClose" class="boton-redondo">x</button>
+                <button class="boton-redondo boton-redondo2">-</button>
+                <button class="boton-redondo boton-redondo3">+</button>               
+            </td>
         </tr>
         <tr>
             <td colspan="4" class="padding-zero "><label class="alinear" for="">0</label></td>
