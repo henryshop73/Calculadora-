@@ -11,8 +11,19 @@ import {
     buttonThree,
     buttonZero,
     buttonComma,
-    screen
+    screen,
+    buttonAdd,
+    buttonEqual,
+    buttonSubtract,
+    buttonMultiply,
+    buttonSplit,
+    buttonPercentage
 } from "./constants.js"
+
+let firstNumber;
+let secondNumber;
+let result;
+let operation;
 
 buttonSeven.addEventListener("click", clickOnButtonSeven)
 
@@ -37,6 +48,18 @@ buttonThree.addEventListener("click", clickOnButtonThree)
 buttonZero.addEventListener("click", clickOnButtonZero)
 
 buttonComma.addEventListener("click", clickOnButtonComma)
+
+buttonAdd.addEventListener("click", clickOnButtonAdd)
+
+buttonEqual.addEventListener("click", clickOnButtonEqual)
+
+buttonSubtract.addEventListener("click", clickOnButtonSubtract)
+
+buttonMultiply.addEventListener("click", clickOnButtonMultiply)
+
+buttonSplit.addEventListener("click", clickOnButtonSplit)
+
+buttonPercentage.addEventListener("click", clickOnButtonPercentage)
     
 function clickOnButtonSeven() {
     screen.textContent += "7"
@@ -84,6 +107,61 @@ function clickOnButtonZero() {
 
 function clickOnButtonComma() {
     screen.textContent += ","
+}
+
+function clickOnButtonAdd() {
+    firstNumber = screen.textContent
+    screen.textContent = ""
+    operation ="add"
+    
+}
+
+function clickOnButtonSubtract() {
+    firstNumber = screen.textContent
+    screen.textContent = ""
+    operation = "subtract"
+}
+
+function clickOnButtonMultiply() {
+    firstNumber = screen.textContent
+    screen.textContent = ""
+    operation = "multiply"
+}
+
+function clickOnButtonSplit() {
+    firstNumber = screen.textContent
+    screen.textContent = ""
+    operation = "split"
+}
+
+function clickOnButtonPercentage() {
+    firstNumber = screen.textContent
+    screen.textContent = ""
+    operation = "percentage"
+}
+
+function clickOnButtonEqual() {
+    secondNumber = screen.textContent
+    
+    switch (operation) {
+        case "add":
+            screen.textContent = parseFloat(firstNumber) + parseFloat(secondNumber)
+            break;
+        case "subtract":
+            screen.textContent = parseFloat(firstNumber) - parseFloat(secondNumber)
+            break
+        case "multiply":
+            screen.textContent = parseFloat(firstNumber) * parseFloat(secondNumber)
+            break;
+        case "split":
+            screen.textContent = parseFloat(firstNumber) / parseFloat(secondNumber)
+            break;
+        case "percentage":
+            screen.textContent = (parseFloat(firstNumber) * parseFloat(secondNumber)) / 100
+            break
+        default:
+            break;
+    }
 }
 
 document.addEventListener("keydown", function(key) {

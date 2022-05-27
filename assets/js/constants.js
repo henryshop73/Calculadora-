@@ -15,6 +15,12 @@ const buttonThree = document.getElementById("buttonThree")
 const buttonZero = document.getElementById("buttonZero")
 const buttonComma = document.getElementById("buttonComma")
 const screen = document.getElementById("screen")
+const buttonAdd = document.getElementById("buttonAdd")
+const buttonEqual = document.getElementById("buttonEqual")
+const buttonSubtract = document.getElementById("buttonSubtract")
+const buttonMultiply = document.getElementById("buttonMultiply")
+const buttonSplit = document.getElementById("buttonSplit")
+const buttonPercentage = document.getElementById("buttonPercentage")
 
 export {
     actionButtons,
@@ -33,5 +39,11 @@ export {
     buttonThree,
     buttonZero,
     buttonComma,
-    screen
+    screen,
+    buttonAdd,
+    buttonEqual,
+    buttonSubtract,
+    buttonMultiply,
+    buttonSplit,
+    buttonPercentage
 }
